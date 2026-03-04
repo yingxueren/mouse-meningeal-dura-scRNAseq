@@ -1,6 +1,6 @@
 # Mouse meningeal dura scRNA-seq (Seurat + Harmony)
 
-This repository contains a clean, GitHub-ready analysis pipeline for mouse meningeal dura scRNA-seq data using **Seurat v5**, **celda::decontX**, and **Harmony**.
+This repository contains a clean, GitHub-ready analysis pipeline for mouse meningeal dura scRNA-seq data using **Seurat v5**.
 
 ## Experimental groups
 - **W**: Wild type  

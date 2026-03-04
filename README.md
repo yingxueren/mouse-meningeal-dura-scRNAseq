@@ -10,15 +10,16 @@ This repository contains a clean, GitHub-ready analysis pipeline for mouse menin
 
 ## Workflow overview
 1. Read 10x matrices for each sample  
-2. Ambient RNA correction with `decontX`  
+2. Ambient RNA correction with decontX  
 3. Downsample to equal cell numbers per sample (16,000)  
 4. QC metrics + filtering  
 5. Merge samples  
 6. Normalize, HVG, scale, PCA  
-7. Harmony integration (batch by `orig.ident`)  
+7. Harmony integration  
 8. UMAP, neighbors, clustering  
 9. Marker genes and manual cell-type annotation  
 10. Differential expression per cell type (MAST)
+11. Cell-cell interaction (NicheNet)
 
 ## How to run
 Run scripts in order from the repo root:
@@ -29,6 +30,7 @@ Rscript scripts/02_qc_filtering.R
 Rscript scripts/03_integration_harmony.R
 Rscript scripts/04_markers_and_annotation.R
 Rscript scripts/05_differential_expression.R
+Rscript scripts/06_nichenet_by_sample.R
 ```
 
 Outputs are written to `results/` (figures, tables, objects).

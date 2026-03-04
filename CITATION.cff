@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: "Mouse meningeal dura scRNA-seq (Seurat + Harmony)"
+message: "If you use this code, please cite the associated manuscript."
+authors:
+  - family-names: "Ren"
+    given-names: "Yingxue"
+keywords:
+  - scRNA-seq
+  - Seurat
+  - Harmony
+  - meningeal dura
+  - mouse
+license: MIT
